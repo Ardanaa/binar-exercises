@@ -9,7 +9,7 @@ Repository Pattern / Architecture
 
 Tugas
 
-1. [GET] API Get by ID -> /users/:id
-2. [PUT] API Update by ID -> /users/:id
-3. [DELETE] API Delete by ID -> /users/:id
-4. [GET] API Get All Books -> /users?title=?
+1. [GET] API Get by ID -> /users/:id v
+2. [PUT] API Update by ID -> /users/:id (kurang id)
+3. [DELETE] API Delete by ID -> /users/:id v
+4. [GET] API Get All Books -> /users?title=? (malah nampil semua)

@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 2000;
+const PORT = 8087;
 
 app.use(express.json());
 
@@ -9,8 +9,13 @@ const booksController = require("./controllers/booksController");
 
 // Define Routes
 app.get("/books", booksController.getAll);
+app.get("/books/:id", booksController.getById);
 app.post("/books", booksController.create);
+app.delete("/books/:id", booksController.deleteById);
+app.put("/books/:id", booksController.updateById);
+
+
 
 app.listen(PORT, () => {
-  console.log(`Server berhasil berjalan di port http://localhost:${PORT}`);
+    console.log(`Server berhasil berjalan di port http://localhost:${PORT}`);
 });
