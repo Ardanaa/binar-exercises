@@ -25,7 +25,7 @@ const updateById = async (req, res) => {
     const { title, author, price } = req.body;
     const { id } = req.params;
     const updateBooksById = await booksService.updateById({
-        title, author, price
+        id, title, author, price
     });
     
     
