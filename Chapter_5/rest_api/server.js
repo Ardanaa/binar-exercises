@@ -7,6 +7,9 @@ app.use(express.json());
 // Import Controllers
 const booksController = require("./controllers/booksController");
 
+// Import Middleware
+const { authenticate } = require("./middlewares/authentication");
+
 // Define Routes
 app.get("/books", booksController.getAll);
 app.get("/books/:id", booksController.getById);
